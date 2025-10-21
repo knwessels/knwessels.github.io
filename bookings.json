@@ -1,0 +1,28 @@
+{
+  "2025-10-15": [
+    {
+      "organizer": "Test User",
+      "contact": "test@example.com",
+      "kids": 8,
+      "package": "starter",
+      "timeslot": {
+        "from": "10:00",
+        "to": "12:00"
+      },
+      "created": 1760422480426
+    }
+  ],
+  "2025-10-24": [
+    {
+      "organizer": "test",
+      "contact": "test",
+      "kids": "10",
+      "package": "ultimate",
+      "timeslot": {
+        "from": "08:00",
+        "to": "11:00"
+      },
+      "created": 1760427341903
+    }
+  ]
+}

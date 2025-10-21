@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book — BrightBash</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="topbar">
+      <div class="logo" aria-label="BrightBash logo">
+        <img src="images/logo/logo-nobg.svg" alt="BrightBash logo" class="logo-img">
+        <div class="brand">
+          <span class="brand-name">BrightBash</span>
+          <small class="brand-sub">Kids Parties & Catering</small>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="top-cta">
+        <a class="btn primary" href="book.html" aria-current="page">Book Now</a>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="site-inner">
+      <h1>Book a Party</h1>
+      <p>Fill out some details and we'll get back to you with availability and a custom quote.</p>
+
+      <div class="booking-grid">
+      <form id="booking-form" class="contact-form" action="#" method="post">
+        <label>Organizer Name<br><input type="text" name="organizer" required></label><br>
+        <label>Phone or Email<br><input type="text" name="contact" required></label><br>
+        <label>Event Date (approx.)<br><input type="date" name="date" id="booking-date"></label><br>
+        <label>Number of Kids<br><input type="number" name="kids" min="1" value="10"></label><br>
+        <label>Package
+          <select name="package" id="package-select">
+            <option value="starter">Starter Party (2h)</option>
+            <option value="deluxe">Deluxe Party (3h)</option>
+            <option value="ultimate">Ultimate Bash (3h)</option>
+          </select>
+        </label><br>
+
+        <div class="timeslots" aria-label="Available timeslots">
+          <div class="timeslots-info">Select a date to view available times</div>
+          <div class="timeslots-list"></div>
+        </div>
+
+        <button class="btn primary" type="submit">Request Quote</button>
+      </form>
+
+      <aside class="calendar-box" aria-label="Booking calendar">
+        <div class="calendar-header">
+          <button class="cal-prev" aria-label="Previous month">‹</button>
+          <div class="cal-title"></div>
+          <button class="cal-next" aria-label="Next month">›</button>
+        </div>
+        <div class="calendar-grid"></div>
+        <div class="calendar-legend"><span class="dot busy"></span> Busy <span class="dot free"></span> Free</div>
+      </aside>
+    </div>
+    </div>
+  </main>
+
+  <footer class="max-container">
+    <p>&copy; "BrightBash" — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
