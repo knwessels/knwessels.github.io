@@ -17,45 +17,53 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
-
+        
 </head>
 <body>
 <header class="site-header" role="banner">
     <div class="topbar">
         <div class="logo" aria-label="BrightBash logo">
-                <img src="images/logo/logo-nobg.svg" alt="BrightBash logo" class="logo-img">
+                <img src="images/logo/logo-nobg.png" alt="BrightBash logo" class="logo-img">
+                
             <div class="brand">
                 <span class="brand-name">Bright Bash</span>
                 <small class="brand-sub">Kids Parties & Catering</small>
             </div>
         </div>
 
+
+          <main class="max-container">
+
         <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            
+<!--            <li><a href="#index.html" aria-current="page">Home</a></li>-->
+                <li><a href="#packages-section">Packages</a></li>
+<!--            <li><a href="#shop.html">Shop</a></li>-->
+<!--            <li><a href="#gallery.html">Gallery</a></li>-->
+                <li><a href="#contact-us-section">Contact Us</a></li>
+                <li><a href="#about-us">About</a></li>
             </ul>
         </nav>
 
-        <div class="top-cta">
-            <a class="btn primary" href="#book">Book Now</a>
-            <button class="menu-toggle" aria-label="Open menu">☰</button>
+<!--        <div class="top-cta">
+            <a class="btn primary" href="#contact-us-section">Contact Us</a>
+            <button class="menu-toggle" aria-label="Open menu">🥳</button>
         </div>
+-->
+
     </div>
 </header>
+
     <div class="hero site-inner">
         <div class="hero-content">
             <h1>Memorable, Mess-free Kids Parties</h1>
-            <p>Fun themes, delicious kid-friendly menus, and full setup & cleanup — so you can enjoy the party too.</p>
-            <div class="hero-ctas">
-                <a class="btn primary large" href="book.html">Get a Quote</a>
-                <a class="btn" href="packages.html">See Packages</a>
-                <a class="btn" href="shop.html">Shop</a>
-            </div>
+            <p>Fun themes, delicious kid-friendly menus and full setup & cleanup — so you can enjoy the party too.</p>
+        <!--    <div class="hero-ctas">
+                <a class="btn primary large" href="#book.html">Get a Quote</a>
+                <a class="btn" href="#packages.html">See Packages</a>
+                <a class="btn" href="#shop.html">Shop</a>
+            </div> -->
             <ul class="trust">
                 <li>Trusted by families</li>
                 <li>Custom themes</li>
@@ -77,11 +85,164 @@
         </div>
     </div>
 
-<main>
-    <div class="site-inner">
-    </div>
-
 <!--  ADDITIONAL CONTENT HERE  -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- packages page -->
+
+<section id="packages-section">
+  <main class="max-container">
+    <h1>Kids Packages</h1>
+    <p>Or customize your own.</p>
+    <section class="cards">
+      <article class="card">
+        <h2>Starter Party</h2>
+          <img src="images\packages\starter_party.jpg" alt="BrightBash logo" class="starter party">
+        <p>2 hour party, simple decorations, snacks for 10 kids.</p>
+        <div class="package-list">
+<ol>
+  <ul>
+    <li>What you get</li>
+    <ul>
+      <li>Food and Decor</li>
+      <li>Cutlery and Crockery</li>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+
+
+    </ul>
+  </ul>
+</ol>
+    </div>
+        <a class="btn" href="#booking-section">Book</a>
+      </article>
+
+      <article class="card">
+        <h2>Deluxe Party</h2>
+          <img src="images\packages\deluxe_party.jpg" alt="BrightBash logo" class="deluxe party">
+        <p>3 hour party, themed decor, full catered kids menu for 15.</p>
+                <div class="package-list">
+<ol>
+  <ul>
+    <li>What you get</li>
+    <ul>
+      <li>Food and Decor</li>
+      <li>Cutlery and Crockery</li>
+      <li>Party favours</li>
+      <li>Themed party</li>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+    </ul>
+  </ul>
+</ol>
+
+        </div>
+        <a class="btn" href="#booking-section">Book</a>
+      </article>
+
+      <article class="card">
+        <h2>Ultimate Bash</h2>
+          <img src="images\packages\ultimate_party.png" alt="BrightBash logo" class="ultimate party">
+        <p>Everything in Deluxe plus entertainment and cleanup.</p>
+                <div class="package-list">
+<ol>
+  <ul>
+    <li>Your Dream Party!</li>
+    <ul>
+      <li>You get it all, themed Party, Full Catering and fun activities for the kiddos</li>
+    </ul>
+  </ul>
+</ol>
+
+        </div>
+        <a class="btn" href="#booking-section">Book</a>
+      </article>
+    </section>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- bookings page-->
+<section id="booking-section">
+    <div class="site-inner">
+      <h1>Book a Party</h1>
+      <p>Fill out some details and we'll get back to you with availability and a custom quote.</p>
+      
+      <div class="booking-grid">
+      <form id="booking-form" class="contact-form" action="#" method="post">
+        <label>Organizer Name<br><input type="text" name="organizer" required></label><br>
+        <label>Phone or Email<br><input type="text" name="contact" required></label><br>
+        <label>Event Date (approx.)<br><input type="date" name="date" id="booking-date"></label><br>
+        <label>Number of Kids<br><input type="number" name="kids" min="1" value="10"></label><br>
+        <label>Package
+          <select name="package" id="package-select">
+            <option value="starter">Starter Party (2h)</option>
+            <option value="deluxe">Deluxe Party (3h)</option>
+            <option value="ultimate">Ultimate Bash (3h)</option>
+          </select>
+        </label><br>
+
+        <div class="timeslots" aria-label="Available timeslots">
+          <div class="timeslots-info">Select a date to view available times</div>
+          <div class="timeslots-list"></div>
+        </div>
+
+        <button class="btn primary" type="submit">Request Quote</button>
+      </form>
+
+      <aside class="calendar-box" aria-label="Booking calendar">
+        <div class="calendar-header">
+          <button class="cal-prev" aria-label="Previous month">‹</button>
+          <div class="cal-title"></div>
+          <button class="cal-next" aria-label="Next month">›</button>
+        </div>
+        <div class="calendar-grid"></div>
+        <div class="calendar-legend"><span class="dot busy"></span> Busy <span class="dot free"></span> Free</div>
+      </aside>
+    </div>
+    </div>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section id="contact-us-section">
+    <div class="site-inner">
+    <h1>Contact</h1>
+    <p>Reach out for quotes and availability.</p>
+
+<form class="contact-form"action="https://formsubmit.co/mkultraparty@gmail.com" method="POST">
+  <label>Name<br><input type="text" name="name" required></label><br>
+  <label>Email<br><input type="email" name="email" required></label><br>
+  <label>Message<br><textarea name="message" rows="5"></textarea></label><br>
+  <button class="btn primary" type="submit">Send</button>
+</form>
+
+
+<!--    <form class="contact-form" action="#" method="post">
+      <label>Name<br><input type="text" name="name" required></label><br>
+      <label>Email<br><input type="email" name="email" required></label><br>
+      <label>Message<br><textarea name="message" rows="5"></textarea></label><br>
+      <button class="btn primary" type="submit">Send</button>
+    </form>-->
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section id="about-us">
+    <div class="site-inner">
+    <h1>About BrightBash</h1>
+    <p>🎉 Where Fun Meets Easy!
+We’re two parents who know how stressful planning kids’ parties can be — that’s why we created a one-stop shop for kid-friendly events and catering. From themed parties to delicious, hassle-free food, we handle the details so you can focus on the fun.
+
+✨ Affordable prices, endless smiles — we offer party favors, décor, and catering that fit your budget without cutting corners on quality. Whether it’s a birthday bash, school event, or family celebration, we make every moment magical and stress-free.
+
+Let’s make your next party unforgettable — without the chaos or the high cost!</p>
+</div>
+</section>
+
+
 
 
 </main>
