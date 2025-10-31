@@ -1,0 +1,344 @@
+:root {
+  /* Bright Bash brand palette */
+  --bright-blue: #1A9BF7;   /* Balloon blue / brand accent */
+  --sky-blue: #5AC8FA;      /* Light accent for highlights */
+  --coral-red: #FF5A5F;     /* Playful coral/pink */
+  --lemon-yellow: #FFD166;  /* Warm yellow accent */
+  --mint-green: #06D6A0;    /* Fresh green tone */
+  --bubblegum-pink: #FF80AB; /* Soft pink for headers/subtext */
+  --cloud-white: #FFFFFF;   /* Background / text contrast */
+  --deep-blue: #0077B6;     /* Darker blue for text or footer */
+  --text-color: #333333;    /* Neutral text color */
+}
+
+/* General Page Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFD166 0%, #FF5A5F 50%, #5AC8FA 100%);
+    color: var(--text-color);
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: linear-gradient(90deg, #ff5af5, #ffd166, #5ac8fa);
+    color: white;
+    padding: 50px 20px;
+    border-bottom: 5px solid var (--bright-blue);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0,2);
+    animation: fadeInHeader 2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* optional floatin balloon shape behinf header text */
+header::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: var(--mint-green);
+    border-radius: 50%;
+    top: -30px;
+    left: -40px;
+    opacity: 0.3;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--coral-red);
+    border-radius: 50%;
+    bottom: -40pc;
+    right: -40px;
+    opacity: 0.3;
+}
+
+/* subtle fade-in animation */
+@keyframes fadeInHeader {
+    from { opacity: 0; transorm: translateY(-20px); }
+    to {opactity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+  color: var(--bright-blue);
+  font-family: "Fredoka One", cursive;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Wrap-style HR for sections */
+section hr {
+    border: none;
+    height: 4px;
+    background: linear-gradient(90deg, var(--coral-red), var(--lemon-yellow), var(--mint-green));
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+}
+
+/* Optional: add decorative circles at ends to “wrap” the section */
+section hr::before,
+section hr::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: var(--bubblegum-pink);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+}
+
+section hr::before {
+    left: -10px;
+}
+
+section hr::after {
+    right: -10px;
+}
+
+
+section {
+    margin: 40px auto;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 01px;
+    text-align: left;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+from-button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button {
+    background: #ff4081;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff80ab;
+}
+
+/* Navigation Bar, fun, Bright Nav bar */
+nav {
+  background: linear-gradient(90deg, #ff80ab, #ffb74d);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Menu Layout */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* Menu Links */
+nav a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Hover and Active effects */
+nav a:hover {
+    color: #ffe082;
+    text-shadow: 0 2px 4px rgb(0,0,0,0,3);
+}
+
+/* When you click or focus */
+nav a:active,
+nav a:focus {
+    color: #fff59d;
+    border-bottom: 2px solid #fff;
+}
+
+/* 📱 Mobile Menu */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+}
+
+/* Simple fade0in animation */
+@keyframes fadeInNav {
+    from { opacity:0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+nav {
+    animation: fadeInNav 1s ease-in-out;
+}
+
+.btn.primary {
+  background-color: var(--coral-red);
+  color: var(--cloud-white);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75em 1.5em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary:hover {
+  background-color: var(--lemon-yellow);
+  color: var(--deep-blue);
+}
+
+header.site-header, footer.site-footer {
+  background-color: var(--bright-blue);
+  color: var(--cloud-white);
+}
+
+nav.main-nav a {
+  color: var(--cloud-white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav.main-nav a:hover {
+  color: var(--lemon-yellow);
+}
+
+/* Balloon / confetti animation */
+@keyframes floatUp {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+/* Balloon / confetti animation */
+@keyframes floatUp {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+
+/* 
+.balloon {
+    width: 40px;
+    height: 60px;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    bottom: -60px;
+    background-color: var(--bright-blue);
+    animation: floatUp 10s linear infinite;
+}
+
+.balloon:nth-child(2) { background-color: var(--coral-red); left: 20%; animation-duration: 12s; }
+.balloon:nth-child(3) { background-color: var(--lemon-yellow); left: 50%; animation-duration: 8s; }
+.balloon:nth-child(4) { background-color: var(--mint-green); left: 75%; animation-duration: 15s; }
+*/
+
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: var(--bubblegum-pink);
+    top: -10px;
+    animation: fall 5s linear infinite;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+section {
+    margin: 40px auto;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--sky-blue);
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    opacity: 0.3;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: var(--lemon-yellow);
+    border-radius: 50%;
+    bottom: -30px;
+    right: -30px;
+    opacity: 0.3;
+}
