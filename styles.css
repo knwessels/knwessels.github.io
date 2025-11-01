@@ -342,3 +342,30 @@ section::after {
     right: -30px;
     opacity: 0.3;
 }
+
+/* WhatsApp floating button style */
+.whatsapp-float {
+   position: fixed;
+   width: 60px;
+   height: 60px;
+   bottom: 20px;
+   right: 20px;
+   background-color: #25d366;
+   color: #fff;
+   border-radius: 50%;
+   text-align: center;
+   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+   z-index:1000;
+}
+
+/* WhatsApp floating button hover effect */
+.whatsapp-float img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+/* WhatsApp floating button hover affect */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
