@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PDF Export</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: white;
+        color: black;
+        padding: 18mm;
+      }
+      .hero,
+      .floating-btn {
+        display: none;
+      }
+      .layout {
+        grid-template-columns: 1fr !important;
+      }
+      .sidebar {
+        margin-bottom: 20px;
+      }
+      @page {
+        size: A4;
+        margin: 18mm;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Kyle Wessels</h2>
+        <p>Field Operations Engineer</p>
+        <p>Email: kyle.n.wessels@gmail.com</p>
+      </aside>
+
+      <main class="content">
+        <h2>Printable Curriculum</h2>
+        <p>This is your clean PDF layout. Press Ctrl/Cmd + P → Save as PDF.</p>
+
+        <h3>Summary</h3>
+        <p>Experienced IT Engineer with 10+ years…</p>
+
+        <h3>Experience</h3>
+        <p>Field Operations Engineer — Excis Compliance</p>
+      </main>
+    </div>
+  </body>
+</html>

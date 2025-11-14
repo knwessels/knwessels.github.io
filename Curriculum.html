@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IT Professional Development Curriculum — Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrap" role="main">
+      <header class="site-card" aria-label="Curriculum header">
+        <div class="title">
+          <h1>IT Professional Development Curriculum</h1>
+          <p class="small">
+            Career Pathway • Beginner → Intermediate → Advanced → Strategic
+          </p>
+        </div>
+
+        <div class="actions" aria-hidden="false">
+          <button class="btn" id="toggleAll">Collapse all</button>
+          <button class="btn primary" id="exportPdf">Export (print)</button>
+        </div>
+      </header>
+
+      <aside class="sidebar" aria-label="Profile and quick info">
+        <div class="profile">
+          <div class="avatar">KW</div>
+          <div class="meta">
+            <h2>Kyle Wessels</h2>
+            <p>Field Operations Engineer • Service Delivery</p>
+          </div>
+        </div>
+
+        <div class="section contact">
+          <h3>Contact</h3>
+          <p class="small">Cape Town, South Africa</p>
+          <p class="small">kyle.n.wessels@gmail.com • +27 74 610 0441</p>
+        </div>
+
+        <div class="section skills">
+          <h3>Core Skills</h3>
+          <div class="skill-badges">
+            <span class="badge">Operations Mgmt</span>
+            <span class="badge">ITSM / ITIL</span>
+            <span class="badge">Azure</span>
+            <span class="badge">VMware</span>
+            <span class="badge">Monitoring</span>
+          </div>
+        </div>
+
+        <div class="section small">
+          <h3>Intended Use</h3>
+          <p class="small">
+            This template is modular — duplicate levels or swap tools as needed.
+          </p>
+        </div>
+      </aside>
+
+      <main class="main" id="content">
+        <section class="intro">
+          <div>
+            <h2 style="margin: 0">Career Progression Pathway</h2>
+            <p class="desc small">
+              Each stage builds technical mastery and service management
+              discipline.
+            </p>
+          </div>
+          <div class="small muted">Template version • 1.0</div>
+        </section>
+
+        <section class="levels" id="levels">
+          <article class="level" data-level="1" id="level-1">
+            <header>
+              <div>
+                <h3>Level 1 — Foundation: IT Support & Helpdesk Excellence</h3>
+                <div class="meta small">
+                  Objective: Establish troubleshooting and ITSM fundamentals.
+                </div>
+              </div>
+              <div>
+                <button class="btn" data-toggle="level-1">Toggle</button>
+              </div>
+            </header>
+
+            <div class="grid" id="level-1-body">
+              <div class="box competencies">
+                <h4>Core Competencies</h4>
+                <ul>
+                  <li>Hardware & OS troubleshooting</li>
+                  <li>Networking basics</li>
+                  <li>Remote support</li>
+                  <li>Ticket management</li>
+                </ul>
+
+                <h4>ITIL Practices</h4>
+                <div class="chips">
+                  <span class="chip">Incident</span>
+                  <span class="chip">Service Request</span>
+                  <span class="chip">Knowledge Mgmt</span>
+                </div>
+              </div>
+
+              <aside class="box tools">
+                <h4>Tools & Certs</h4>
+                <p class="small">O365 • AD • Intune</p>
+                <div class="chips">
+                  <span class="chip">A+</span>
+                  <span class="chip">ITIL v4 Foundation</span>
+                </div>
+              </aside>
+            </div>
+          </article>
+
+          <article class="level" data-level="2" id="level-2">
+            <header>
+              <div>
+                <h3>
+                  Level 2 — Intermediate: Field Operations & Systems
+                  Administration
+                </h3>
+                <div class="meta small">
+                  Objective: Manage infrastructure & monitoring workflows.
+                </div>
+              </div>
+              <button class="btn" data-toggle="level-2">Toggle</button>
+            </header>
+
+            <div class="grid" id="level-2-body">
+              <div class="box competencies">
+                <h4>Core Competencies</h4>
+                <ul>
+                  <li>Windows Server & AD</li>
+                  <li>Networking (VLANs, routing)</li>
+                  <li>VMware basics</li>
+                  <li>Monitoring (PRTG, Zabbix)</li>
+                </ul>
+              </div>
+
+              <aside class="box tools">
+                <h4>Technologies</h4>
+                <p class="small">VMware • Azure • PRTG</p>
+              </aside>
+            </div>
+          </article>
+
+          <article class="level" data-level="3" id="level-3">
+            <header>
+              <div>
+                <h3>Level 3 — Advanced: Service Delivery Engineering</h3>
+                <div class="meta small">
+                  Objective: Lead hybrid operations & automation.
+                </div>
+              </div>
+              <button class="btn" data-toggle="level-3">Toggle</button>
+            </header>
+
+            <div class="grid" id="level-3-body">
+              <div class="box competencies">
+                <h4>Skill Areas</h4>
+                <ul>
+                  <li>Hybrid AD & identity</li>
+                  <li>Firewall & routing optimization</li>
+                  <li>IaC automation</li>
+                  <li>Analytics (Power BI, Databricks)</li>
+                </ul>
+              </div>
+
+              <aside class="box tools">
+                <h4>Tech Stack</h4>
+                <p class="small">Azure • Grafana • Sentinel • Terraform</p>
+              </aside>
+            </div>
+          </article>
+
+          <article class="level" data-level="4" id="level-4">
+            <header>
+              <div>
+                <h3>Level 4 — Strategic: Operations Management</h3>
+                <div class="meta small">
+                  Objective: Governance, KPIs, and CI leadership.
+                </div>
+              </div>
+              <button class="btn" data-toggle="level-4">Toggle</button>
+            </header>
+
+            <div class="grid" id="level-4-body">
+              <div class="box competencies">
+                <h4>Leadership Skills</h4>
+                <ul>
+                  <li>Operations strategy</li>
+                  <li>Governance & compliance</li>
+                  <li>SLA & KPI dashboards</li>
+                  <li>AIOps planning</li>
+                </ul>
+              </div>
+
+              <aside class="box tools">
+                <h4>Certifications</h4>
+                <div class="chips">
+                  <span class="chip">ITIL Leader</span>
+                  <span class="chip">Azure Architect</span>
+                </div>
+              </aside>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Toggle logic
+      document.querySelectorAll("[data-toggle]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-toggle") + "-body";
+          const body = document.getElementById(id);
+          body.style.display = body.style.display === "none" ? "grid" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

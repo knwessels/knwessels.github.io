@@ -1,92 +1,142 @@
-:root {
-    --primary-color: #1f4e5f;
-    --secondary-color: #4b5563;
-    --accent-color: #0ea5e9;
-    --bg-color: #f9fafb;
-    --text-color: #111827;
+/* Reset & Globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
 
-a { color: var(--accent-color); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
 .container {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: auto;
     background: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 30px;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Columns */
+.main-columns {
+    display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
-.left-column { display: flex; flex-direction: column; gap: 20px; }
-.right-column { display: flex; flex-direction: column; gap: 20px; }
+.left-column {
+    flex: 1;
+    min-width: 280px;
+}
 
-h1 { font-size: 2rem; color: var(--primary-color); }
-h2 {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
+.right-column {
+    flex: 2;
+    min-width: 500px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 22px;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Job */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: #007BFF;
+    font-size: 18px;
+}
+
+.company {
+    font-size: 14px;
+    color: #555;
+    display: block;
     margin-bottom: 10px;
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 3px;
-}
-h2 i { margin-right: 8px; }
-
-p, li { font-size: 0.95rem; }
-
-.skills-list span {
-    display: inline-block;
-    background: var(--accent-color);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin: 2px 2px 2px 0;
-    font-size: 0.85rem;
-    transition: transform 0.2s, background 0.2s;
-}
-.skills-list span:hover {
-    transform: scale(1.05);
-    background: #0c7abf;
 }
 
-.section { margin-bottom: 20px; }
-
-.experience-item { margin-bottom: 20px; position: relative; padding-left: 20px; }
-
-.timeline {
-    border-left: 3px solid var(--accent-color);
-    margin-left: 5px;
-    padding-left: 15px;
+/* Project Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.experience-item::before {
-    content: '';
-    position: absolute;
-    left: -9px;
-    top: 5px;
-    width: 15px;
-    height: 15px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px var(--accent-color);
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
 }
 
-.experience-item h3 { font-size: 1rem; color: var(--primary-color); margin-bottom: 4px; }
-.experience-item span { font-size: 0.85rem; color: var(--secondary-color); }
-.experience-item ul { margin-top: 5px; list-style-type: disc; padding-left: 20px; }
-.achievements { margin-top: 5px; list-style-type: square; padding-left: 20px; color: var(--accent-color); }
+.card:hover {
+    background: #eaf3ff;
+    transform: translateY(-5px);
+}
 
-@media (max-width: 900px) {
-    .container { grid-template-columns: 1fr; }
+.construction {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* occupy most of the viewport */
+    padding: 20px;
+    text-align: center;
+}
+
+.construction img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* scales image without cropping */
+    border-radius: 10px; /* optional rounded corners */
 }
